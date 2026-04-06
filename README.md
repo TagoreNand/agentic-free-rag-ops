@@ -1,6 +1,6 @@
 # Agentic Free RAG Ops (Ollama-based)
 
-An advanced, GitHub-ready example of an **agentic** AI system that can:
+An advanced **agentic** AI system that can:
 
 - Plan a multi-step task (planner/supervisor agent)
 - Use multiple specialist agents (researcher, code, analyst, reflector)
