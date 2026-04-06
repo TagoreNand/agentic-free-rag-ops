@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agentic Free RAG Ops</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 24px;
+        max-width: 1050px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 110px;
+      }
+      button {
+        padding: 10px 14px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .row {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .col {
+        flex: 1;
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 14px;
+        margin-top: 14px;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+      }
+      pre {
+        background: #f6f6f6;
+        padding: 10px;
+        border-radius: 8px;
+        overflow: auto;
+      }
+      .muted {
+        color: #666;
+      }
+      .status {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agentic Free RAG Ops</h1>
+    <p class="muted">
+      Planner + researcher + RAG + synthesis + reflection. Uses local Ollama (no API keys).
+    </p>
+
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <label for="goal"><b>Goal</b></label>
+          <textarea id="goal" placeholder="e.g. Compare 3 open-source vector databases and recommend one for small teams."></textarea>
+
+          <div style="margin-top: 10px">
+            <label>
+              <input type="checkbox" id="enableCodeRun" />
+              Enable code execution (risky; default off)
+            </label>
+          </div>
+
+          <div style="margin-top: 10px">
+            <label>
+              Max steps:
+              <input type="number" id="maxSteps" value="6" min="1" max="25" style="width: 80px" />
+            </label>
+          </div>
+
+          <button id="submitBtn">Create Task</button>
+          <div id="submitStatus" class="muted" style="margin-top: 10px"></div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <b>Task</b>
+          <div style="margin-top: 6px" class="muted">
+            Task ID: <code id="taskId">-</code>
+          </div>
+          <div style="margin-top: 8px">
+            Status: <span id="taskStatus" class="status">-</span>
+          </div>
+          <div style="margin-top: 12px">
+            <b>Result</b>
+            <div id="taskResult" style="margin-top: 8px"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <b>Steps</b>
+          <div id="steps" style="margin-top: 10px"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

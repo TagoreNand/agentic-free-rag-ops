@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local data / indexes
+data/
+
+# SQLite DB files (created at runtime)
+*.db
+*.sqlite
+
+# Logs
+*.log
+
