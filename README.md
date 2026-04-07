@@ -293,7 +293,7 @@ If `ENABLE_CODE_RUN=true`, generated Python can be executed in a subprocess. Thi
 
 ## What to improve next
 
-If you want to evolve this into a stronger production-style system, the next logical upgrades are:
+I want to evolve this into a stronger production-style system, the next logical upgrades are:
 
 - multi-source web retrieval beyond Wikipedia
 - source attribution with richer citations
@@ -307,7 +307,7 @@ If you want to evolve this into a stronger production-style system, the next log
 
 ---
 
-## Why interviewers may like this project
+## How is this project well-rounded
 
 This repository shows that you can work across the full lifecycle of an applied AI system:
 
