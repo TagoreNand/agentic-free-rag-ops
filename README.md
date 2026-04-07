@@ -323,18 +323,6 @@ It is a good example of a project that sits between **ML engineering**, **LLM sy
 
 ---
 
-## Recommended GitHub profile polish
-
-To make the repository look even stronger on GitHub, consider adding:
-
-- a short **repository description**
-- GitHub **topics/tags** such as `rag`, `ollama`, `fastapi`, `agentic-ai`, `llm`, `sqlite`
-- a **LICENSE** file
-- a few **screenshots or a short demo GIF**
-- a **sample output** section showing one completed task
-
----
-
 ## Disclaimer
 
 This project is best understood as a **local, reproducible agentic RAG prototype** designed for learning, experimentation, and portfolio presentation.
